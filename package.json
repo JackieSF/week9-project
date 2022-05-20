@@ -1,0 +1,21 @@
+{
+    "name": "twitter-clone-server",
+    "version": "1.0.0",
+    "description": "Twitter Clone",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    },
+    "author": "Jackie Felix",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "config": "^3.3.2",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "express-validator": "^6.6.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.10.9"
+    }
+  }
